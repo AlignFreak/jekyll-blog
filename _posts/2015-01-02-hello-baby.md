@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 'Hello Baby'
-description: 'Just testing...'
-author: 'Sebastijan Kolenko'
+title: "Hello Baby"
+description: "Just testing..."
+author: "Sebastijan Kolenko"
+headerImage: "post-bg.jpg"
 ---
 
 #Hello baby
