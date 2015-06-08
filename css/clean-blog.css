@@ -57,6 +57,11 @@ hr.small {
   font-weight: 800;
   letter-spacing: 1px;
 }
+
+.navbar-custom .nav li a.selected {
+  color: #81D425;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
