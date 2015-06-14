@@ -2,5 +2,5 @@ markdown: redcarpet
 paginate: 5
 baseurl: /jekyll-blog
 
-gems: 
- - jekyll-sitemap
+# gems: 
+#  - jekyll-sitemap
