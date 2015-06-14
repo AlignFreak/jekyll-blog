@@ -3,11 +3,16 @@
 
 <head>
 
+    <link rel="canonical" href="{{page.url | prepend: site.baseurl}}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{{page.description}}">
+    <meta name="author" content="{% if page.author %}{{page.author}}{% else %}General author{% endif %}">
+    {% if page.headerImage %}
+    <meta property="og:image" content="{{page.headerImage | prepend: site.baseurl}}">
+    {% endif %}
+    <link rel="author" href="https://plus.google.com/+SebastijanKolenko/">
 
     <title>{{page.title}}</title>
 
@@ -51,6 +56,9 @@
                         {% else %}
                             <span class="subheading">{{page.description}}</span>
                         {% endif %}
+
+                        <aside class="sharing">
+                            <div class="g-plusone" data-annotation="inline" data-width="300"></div>
                     </div>
                 </div>
             </div>
